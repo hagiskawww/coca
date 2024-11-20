@@ -1,11 +1,8 @@
 .header {
+  z-index: 100;
+  transition: var(--transition), opacity var(--transition), visibility var(--transition), visibility var(--transition);
 
-  &--fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
+
   padding: 25px 0 22px;
 
   &__container {
@@ -107,6 +104,13 @@
         background-color: var(--primary-color-50);
       }
     }
+  }
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 }
 

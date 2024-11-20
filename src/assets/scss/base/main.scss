@@ -10,10 +10,14 @@ html {
   box-sizing: inherit;
 }
 
-body {
+.body {
   color: var(--neutral-color-100);
   background-color: var(--neutral-color-10);
   overflow-x: hidden;
+
+  &--fixed {
+    overflow-y: hidden;
+  }
 }
 
 img {

@@ -6,9 +6,9 @@ export function headerScroll() {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
     if (currentScroll > scrollTop && currentScroll > header.offsetHeight) {
-      header.classList.remove('fixed');
+      header.classList.remove('header--fixed');
     } else {
-      header.classList.add('fixed');
+      header.classList.add('header--fixed');
     }
 
     scrollTop = currentScroll <= 0 ? 0 : currentScroll;
