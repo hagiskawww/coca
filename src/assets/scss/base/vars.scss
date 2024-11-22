@@ -19,6 +19,11 @@
 //  container
   --container-padding: 15px;
   --container-with: 1200px;
+
+  @include mobile {
+    --container-with: 480px;
+  }
+
   // transition
   --transition: .2s ease-in-out;
 

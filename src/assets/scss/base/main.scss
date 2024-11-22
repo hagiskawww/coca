@@ -7,13 +7,13 @@ html {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 .body {
   color: var(--neutral-color-100);
   background-color: var(--neutral-color-10);
-  overflow-x: hidden;
+  overflow-x: auto;
 
   &--fixed {
     overflow-y: hidden;

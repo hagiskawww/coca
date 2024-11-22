@@ -95,12 +95,16 @@
         font-size: 28px;
       }
 
-      @include mobile {
+      @include small-tablet {
         font-size: 24px;
       }
 
-      @include small-mobile {
+      @include mobile {
         font-size: 20px;
+      }
+
+      @include small-mobile {
+        font-size: 18px;
       }
 
       &::before {
@@ -110,6 +114,10 @@
         height: 1px;
         background-color: var(--neutral-color-100);
         transform: translateY(-20px);
+
+        @include mini-desktop {
+          display: none;
+        }
 
 
       }
