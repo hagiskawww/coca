@@ -1,6 +1,6 @@
 .overview {
   padding: 100px 0;
-  background-color: var(--black-bg-color);
+  background-color: var(--bg-color);
 
   @include tablet {
     text-align: center;
@@ -11,19 +11,21 @@
   }
 
   &__title {
-    margin-bottom: 24px;
-    max-width: 816px;
     font-weight: 600;
+    font-size: 56px;
+    line-height: 120%;
     letter-spacing: -0.04em;
     color: #fff;
+    padding-bottom: 24px;
   }
 
   &__descr {
-    margin-bottom: 80px;
-    max-width: 660px;
     font-weight: 500;
+    font-size: 18px;
     line-height: 150%;
-    color: var(--neutral-color-150);
+    color: #7e8492;
+    text-align: left;
+    margin-bottom: 80px;
 
     @include tablet {
       margin-bottom: 60px;
@@ -52,7 +54,6 @@
     &-icon,
     &-title {
       margin-bottom: 24px;
-
       @include tablet {
         margin-bottom: 18px;
       }
@@ -73,7 +74,7 @@
     &-descr {
       font-weight: 500;
       line-height: 162%;
-      color: var(--neutral-color-150);
+      color: #7e8492;
     }
   }
 
@@ -83,6 +84,7 @@
     @include tablet {
       margin-right: auto;
       margin-left: auto;
+      text-align: center;
     }
   }
 }

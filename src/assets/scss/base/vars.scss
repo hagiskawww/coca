@@ -1,22 +1,25 @@
 :root {
-//  neutral color
+  //  neutral color
   --neutral-color-10: #fff;
-  --neutral-color-20: #F5F5F5;
-  --neutral-color-60: #18181D;
-  --neutral-color-100: #1D1E25;
+  --neutral-color-20: #f5f5f5;
+  --neutral-color-60: #18181d;
+  --neutral-color-100: #1d1e25;
   --neutral-color-120: #828282;
   --neutral-color-130: #d9d9d9;
-  --neutral-color-140: #000 ;
+  --neutral-color-140: #000;
+
+  // bg color
+  --bg-color: #1d1e25;
 
   // logo colors
-  --logo-color-text: #101010 ;
-  --logo-color-circle: #101010 ;
+  --logo-color-text: #101010;
+  --logo-color-circle: #101010;
 
-//  primary-colors
+  //  primary-colors
   --primary-color-50: #4e7ddb;
-  --primary-color-70: #E2F8F0B2;
+  --primary-color-70: #e2f8f0b2;
 
-//  container
+  //  container
   --container-padding: 15px;
   --container-with: 1200px;
 
@@ -25,7 +28,7 @@
   }
 
   // transition
-  --transition: .2s ease-in-out;
+  --transition: 0.2s ease-in-out;
 
   // z-index
   --z-index-0: -1;
@@ -35,13 +38,13 @@
   --z-index-4: 4;
 }
 
-
-[data-theme="dark"] {
-  --neutral-color-10: #1D1E25;
+[data-theme='dark'] {
+  --neutral-color-10: #1d1e25;
   --neutral-color-100: #fff;
   --neutral-color-140: #fff;
   --neutral-color-150: #fff;
-  --logo-color-text: #fff ;
-  --logo-color-circle: #343542 ;
-  --primary-color-70: #E2F8F033;
+  --logo-color-text: #fff;
+  --logo-color-circle: #343542;
+  --primary-color-70: #e2f8f033;
+  --bg-color: #1d1e25;
 }

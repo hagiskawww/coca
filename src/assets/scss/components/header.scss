@@ -1,7 +1,11 @@
 .header {
   z-index: 100;
-  transition: var(--transition), opacity var(--transition), visibility var(--transition), visibility var(--transition);
-
+  transition:
+    var(--transition),
+    opacity var(--transition),
+    visibility var(--transition),
+    visibility var(--transition);
+  background: none;
 
   padding: 25px 0 22px;
 
@@ -21,7 +25,6 @@
       & circle {
         fill: var(--logo-color-circle);
       }
-
     }
   }
 
@@ -43,10 +46,12 @@
       background-color: var(--neutral-color-10);
       height: 100vh;
       width: 80vw;
-      transition: left var(--transition), opacity var(--transition), visibility var(--transition);
+      transition:
+        left var(--transition),
+        opacity var(--transition),
+        visibility var(--transition);
       opacity: 0;
       visibility: hidden;
-
 
       &--visible {
         left: 0;
@@ -55,8 +60,6 @@
       }
     }
   }
-
-
 
   &__switcher {
     position: relative;
@@ -68,7 +71,6 @@
     transition: var(--transition);
     cursor: pointer;
 
-
     &::before {
       content: '';
       position: absolute;
@@ -79,7 +81,9 @@
       width: 23px;
       height: 23px;
       background-color: var(--neutral-color-120);
-      transition: var(--transition), background-color var(--transition);
+      transition:
+        var(--transition),
+        background-color var(--transition);
     }
 
     &-text {
@@ -115,8 +119,6 @@
 }
 
 .nav {
-
-
   &__list {
     @include flex-align-center;
     gap: 32px;
@@ -153,7 +155,7 @@
     }
 
     &:hover {
-      &::after{
+      &::after {
         opacity: 1;
         visibility: visible;
       }
@@ -178,7 +180,6 @@
     }
   }
 }
-
 
 .burger {
   @include burger;

@@ -29,9 +29,7 @@
 }
 
 .text {
-  &-subtitle
-
-  &-p {
+  &-subtitle &-p {
     &-large {
       font-size: 24px;
     }
@@ -47,8 +45,5 @@
     &-small {
       font-size: 14px;
     }
-
-
   }
 }
-
