@@ -79,7 +79,7 @@
         font-weight: 500;
         font-size: 10px;
         line-height: 150%;
-        color: var(--neutral-color-150);
+        color: #7e8492;
       }
 
       &-price {
@@ -111,7 +111,13 @@
       &-descr {
         font-weight: 400;
         font-size: 8px;
-        color: var(--neutral-color-150);
+        color: #7e8492;
+
+        &-sp {
+          font-weight: 700;
+          font-size: 8px;
+          color: #7e8492;
+        }
       }
     }
   }
@@ -135,12 +141,14 @@
     }
   }
 
-  &__descr {
+  &__desr {
     margin-bottom: 40px;
     max-width: 360px;
     font-weight: 500;
     line-height: 178%;
-    color: var(--neutral-color-150);
+    color: #7E8492;
+
+
 
     @include mini-desktop {
       max-width: 700px;
@@ -165,15 +173,9 @@
         margin-bottom: 22px;
       }
     }
+  }
 
-    &::before {
-      content: '';
-      display: inline-block;
-      margin-right: 19px;
-      padding-right: 19px;
-      width: 20px;
-      height: 20px;
-      background: url('../assets/icons/features-tick-icon.svg');
-    }
+  &__svg {
+    margin-right: 16px;
   }
 }

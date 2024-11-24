@@ -19,15 +19,18 @@
 
   &__title {
     font-weight: 500;
+    font-size: 18px;
     line-height: 178%;
-    color: var(--neutral-color-150);
+    color: #7e8492;
+    max-width: 400px;
 
     &-num {
-      display: block;
-      margin-bottom: 16px;
       font-weight: 600;
+      font-size: 56px;
+      line-height: 120%;
       letter-spacing: -0.04em;
       color: var(--neutral-color-100);
+      padding-bottom: 16px;
 
       @include small-mobile {
         margin-bottom: 10px;

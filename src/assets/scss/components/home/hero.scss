@@ -1,7 +1,3 @@
-.header--fixed {
-  padding-bottom: 80px;
-}
-
 .hero {
   position: relative;
   overflow-x: hidden;
@@ -302,26 +298,10 @@
 
         &--green {
           color: #60d39c;
-
-          &::before {
-            content: '';
-            display: inline-block;
-            background: url('../../../icons/green-arrow-icon.svg') / no-repeat;
-            width: 14px;
-            height: 14px;
-          }
         }
 
         &--red {
           color: #e35454;
-
-          &::before {
-            content: '';
-            display: inline-block;
-            background: url('../../../icons/red-arrow-icon.svg') / no-repeat;
-            width: 14px;
-            height: 14px;
-          }
         }
       }
     }

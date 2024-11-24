@@ -5,9 +5,8 @@
     opacity var(--transition),
     visibility var(--transition),
     visibility var(--transition);
-  background: none;
-
-  padding: 25px 0 22px;
+    background-color: (var(--neutral-color-10));
+    padding: 12px 0;
 
   &__container {
     @include flex-all-between;
