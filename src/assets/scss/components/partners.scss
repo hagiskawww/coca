@@ -1,8 +1,8 @@
 .partners {
   padding: 108px 0;
 
-  @include mobile {
-    padding: 76px 0;
+  @include small-tablet {
+    padding: 0;
   }
 
   &__container {
@@ -24,6 +24,10 @@
     color: #7e8492;
     max-width: 400px;
 
+    @include small-tablet {
+      margin-bottom: 50px;
+    }
+
     &-num {
       font-weight: 600;
       font-size: 56px;
@@ -43,6 +47,10 @@
     gap: 10px 30px;
     flex-wrap: wrap;
 
+    @include small-tablet {
+    display: none;
+    }
+
     @include mobile {
       gap: 10px;
     }
@@ -56,3 +64,26 @@
     background-color: #fff;
   }
 }
+
+.partners__slider {
+  display: none !important;
+
+  @include small-tablet {
+    display: block !important;
+  }
+}
+
+.partners__slider-slide img {
+  @include small-tablet {
+    width: 50%;
+    background-color: #fff;
+    padding: 50px 50px;
+    border-radius: 16px;
+  }
+
+  @include mobile {
+    width: 70%;
+  }
+
+}
+

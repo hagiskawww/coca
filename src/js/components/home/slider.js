@@ -22,6 +22,10 @@ export const useTestimonialsSlider = () => {
     slidesPerView: 'auto',
     spaceBetween: 22,
     loop: true,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true,
+    },
     navigation: {
       prevEl: '.testimonials__btn--prev',
       nextEl: '.testimonials__btn--next',

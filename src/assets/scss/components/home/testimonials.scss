@@ -36,7 +36,7 @@
     max-width: 376px;
     font-weight: 500;
     line-height: 178%;
-    color: var(--neutral-color-150);
+    color: #7e8492;
 
     @include tablet {
       max-width: 450px;
@@ -51,17 +51,18 @@
     &-num {
       font-weight: 500;
       line-height: 162%;
-      color: var(--neutral-color-100);
+      color: #7e8492;
     }
   }
 
   &__slider-wrapper {
+
     &::before {
       content: '';
       display: inline-block;
       width: 115px;
       height: 77px;
-      background: url('../assets/icons/quotes-icon.svg');
+      background: url('../../../icons/quotes-icon.svg');
       transform: translateY(15px);
 
       @include mini-desktop {
@@ -80,11 +81,11 @@
 
   &__comment {
     &-text {
-      margin-bottom: 40px;
       font-weight: 500;
       line-height: 130%;
       letter-spacing: -0.03em;
       color: var(--neutral-color-100);
+      margin-bottom: 20px;
     }
 
     &-author {
@@ -106,16 +107,17 @@
       &-professions {
         font-weight: 500;
         line-height: 162%;
-        color: var(--neutral-color-150);
+        color: #7e8492;
       }
     }
   }
 
   &__btns {
+    position: relative;
     @include flex-align-center;
     gap: 16px;
     justify-content: flex-end;
-    transform: translateY(-40px);
+    transform: translateY(-50px);
 
     @include mini-desktop {
       transform: translateY(5px);
@@ -152,6 +154,10 @@
 
     &--next {
       transform: rotate(-180deg);
+    }
+
+    &--prev {
+      transform: rotate(180deg);
     }
   }
 }

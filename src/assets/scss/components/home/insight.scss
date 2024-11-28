@@ -1,5 +1,6 @@
 .insight {
   &__container {
+    position: relative;
     border-top: 1px solid var(--neutral-color-30);
     padding-top: 160px;
     padding-bottom: 91px;
@@ -32,7 +33,7 @@
     color: var(--neutral-color-150);
 
     @include mobile {
-      margin-bottom: 40px;
+      margin-bottom: 90px;
     }
   }
 
@@ -104,9 +105,109 @@
 
     &-title {
       font-weight: 600;
+      font-size: 32px;
       line-height: 150%;
       letter-spacing: -0.02em;
       color: var(--neutral-color-100);
+      max-width: 580px;
     }
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  margin-bottom: 30px;
+}
+
+.swiper-scrollbar {
+  background-color: var(--neutral-color-10);
+  border-radius: 5px;
+}
+
+.swiper-scrollbar-drag {
+  background-color: var(--neutral-color-100);
+  border-radius: 5px;
+}
+
+.swiper-button-prev {
+  top: 20%;
+  left: 89%;
+  cursor: pointer;
+  border: 1px solid #ced1d8;
+  border-radius: 100px;
+  padding: 16px;
+  width: 50px;
+  height: 50px;
+  fill: #ced1d8;
+  transition: var(--transition);
+  margin: 0;
+
+  @include mini-desktop {
+    left: 88%;
+  }
+
+  @include tablet {
+    left: 85%;
+  }
+
+  @include small-tablet {
+    top: 15%;
+    left: 0;
+  }
+
+  @include opt-mobile {
+    top: 20%;
+  }
+
+  @include small-mobile {
+    top: 18%;
+  }
+
+  &:hover {
+    fill: var(--neutral-color-150);
+    background: #1d1e25;
+  }
+}
+
+.swiper-button-next {
+  top: 20%;
+  cursor: pointer;
+  border: 1px solid #ced1d8;
+  border-radius: 100px;
+  padding: 16px;
+  width: 50px;
+  height: 50px;
+  fill: #ced1d8;
+  transition: var(--transition);
+  margin: 0;
+
+
+  @include small-tablet {
+    top: 15%;
+  }
+
+  @include opt-mobile {
+    top: 20%;
+  }
+
+  @include small-mobile {
+    top: 18%;
+  }
+
+  &:hover {
+    fill: var(--neutral-color-150);
+    background: #1d1e25;
+  }
+}
+
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-button-prev::after {
+  content: '';
 }
