@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   padding: 90px 0 78px;
 
   @include mobile {
@@ -26,24 +27,25 @@
     }
   }
 
-  &__title {
+  &__descr {
+    color: #1463FF;
     display: inline-block;
     margin-bottom: 24px;
     border-radius: 16px;
     padding: 4px 12px;
     font-weight: 600;
     line-height: 150%;
-    color: var(--primary-color-30);
     background-color: #1463ff1a;
+    text-align: center;
 
     @include small-mobile {
       margin-bottom: 18px;
     }
   }
 
-  &__descr {
-    margin: 0 auto 56px;
+  &__title {
     max-width: 903px;
+    margin: 0 auto 56px;
     font-weight: 700;
     letter-spacing: -0.04em;
     color: var(--neutral-color-100);
@@ -69,7 +71,7 @@
       border-radius: 50%;
       width: 20px;
       height: 20px;
-      background-color: var(--primary-color-30);
+      background-color: var(--primary-color-50);
       opacity: 0.6;
       transition:
         left var(--transition),
@@ -220,7 +222,7 @@
         margin-right: 10px;
         width: 20px;
         height: 20px;
-        background: url('../assets/icons/pricing-tick-icon.svg');
+        background: url('./assets/icons/pricing-tick-icon.svg');
         transform: translateY(2px);
       }
 
@@ -237,7 +239,7 @@
         color: var(--neutral-color-150);
 
         &::before {
-          background: url('../assets/icons/pricing-tick-inaccess-icon.svg');
+          background: url('./assets/icons/pricing-tick-inaccess-icon.svg');
         }
       }
     }

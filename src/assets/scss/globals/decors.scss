@@ -1,4 +1,4 @@
-.hero-decor {
+.hero-decors {
   position: relative;
 
   &::before {
@@ -23,7 +23,7 @@
     bottom: 0;
     width: 525px;
     height: 525px;
-    background: var(--success-color-70);
+    background: var(--primary-color-70);
     filter: blur(180px);
 
     @include small-tablet {

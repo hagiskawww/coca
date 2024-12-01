@@ -31,51 +31,7 @@
       max-width: 480px;
     }
 
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: var(--z-index-0);
-      top: -50px;
-      left: -80px;
-      display: inline-block;
-      border-radius: 50%;
-      width: 551px;
-      height: 551px;
-      background: #fa7515;
-      opacity: 0.2;
-      filter: blur(200px);
 
-      @include mini-desktop {
-        width: 325px;
-        height: 325px;
-        left: 80px;
-        text-align: center;
-      }
-
-      @include small-tablet {
-        width: 251px;
-        height: 251px;
-      }
-    }
-
-    &::after {
-      bottom: -150px;
-      right: -400px;
-      width: 551px;
-      height: 551px;
-      content: '';
-      position: absolute;
-      display: inline-block;
-      z-index: var(--z-index-0);
-      border-radius: 50%;
-      background: #e2f8f0b2;
-      filter: blur(180px);
-
-      @include small-tablet {
-        width: 225px;
-        height: 225px;
-      }
-    }
   }
 
   .hero__left {
