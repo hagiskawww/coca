@@ -19,3 +19,12 @@ export const useInsightSlider = () => {
     },
   });
 };
+
+export const sliderHero = () => {
+  new Swiper('.hero__slider', {
+    slidesPerView: 'auto',
+    spaceBetween: 32,
+    loop: true,
+    effect: 'fade',
+  });
+};

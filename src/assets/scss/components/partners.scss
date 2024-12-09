@@ -8,7 +8,7 @@
   &__container {
     @include flex-all-between;
     gap: 30px;
-    max-width: 1110px;
+    max-width: 1110px !important;
 
     @include small-tablet {
       flex-direction: column;
@@ -69,13 +69,14 @@
   display: none !important;
 
   @include small-tablet {
-    display: block !important;
+    max-width: 320px;
+    display: flex !important;
   }
 }
 
 .partners__slider-slide img {
   @include small-tablet {
-    width: 50%;
+    width: 100%;
     background-color: #fff;
     padding: 50px 50px;
     border-radius: 16px;

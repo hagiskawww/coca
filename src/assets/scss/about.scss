@@ -1,3 +1,10 @@
-body {
-  background-color: #1d1e25;
-}
+@import './mixins';
+@import './base';
+@import './globals';
+
+// components
+@import './components/header';
+@import './components/about/hero';
+@import './components/about/info';
+@import './components/about/creators';
+@import './components/footer';
