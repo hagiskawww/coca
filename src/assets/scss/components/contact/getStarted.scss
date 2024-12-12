@@ -68,7 +68,7 @@
       margin-bottom: 48px;
       font-weight: 400;
       line-height: 167%;
-      color: var(--neutral-color-150);
+      color: #7e8492;
     }
 
     &-link {
@@ -89,8 +89,10 @@
 
     &-label {
       @include flex-column;
+      font-weight: 500;
       margin-bottom: 24px;
       width: 100%;
+      color: #1d1e25;
 
       &-text {
         display: inline-block;
