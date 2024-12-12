@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "intl-tel-input": "^25.2.0",
-    "swiper": "^11.1.15"
+    "swiper": "^11.1.15",
+    "vite-plugin-html-inject": "^1.1.2"
   }
 }
