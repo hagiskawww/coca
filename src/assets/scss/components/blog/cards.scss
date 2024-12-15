@@ -1,0 +1,48 @@
+.cards {
+  padding: 120px 0;
+  background: rgb(29, 30, 37);
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 32px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+  }
+
+  &__img {
+  }
+
+  &__title {
+    max-width: 583px;
+
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: left;
+
+    transition: var(--transition);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__descr {
+    max-width: 515px;
+
+    color: rgb(126, 132, 146);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+
+  }
+}
