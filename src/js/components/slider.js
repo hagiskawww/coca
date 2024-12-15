@@ -28,3 +28,34 @@ export const sliderHero = () => {
     effect: 'fade',
   });
 };
+
+export const activeSlider = () => {
+  new Swiper('.active__swiper', {
+    slidesPerView: 2.5,
+    spaceBetween: 32,
+    loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 0,
+      },
+      320: {
+        slidesPerView: 1,
+      },
+      375: {
+        slidesPerView: 1,
+      },
+      450: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 2,
+      },
+      1470: {
+        slidesPerView: 3,
+      },
+    },
+  })
+}

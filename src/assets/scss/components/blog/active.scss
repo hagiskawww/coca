@@ -1,0 +1,172 @@
+.active {
+  padding: 96px 0 168px;
+
+  @include tablet {
+    padding: 96px 0 64px;
+  }
+
+  &__top {
+
+    padding-bottom: 128px;
+
+    @include mobile {
+
+      padding-bottom: 64px;
+    }
+    &-title {
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: -3px;
+      text-align: left;
+
+      padding-bottom: 53px;
+
+      @include mobile {
+        font-size: 54px;
+
+        padding-bottom: 16px;
+      }
+    }
+
+    &-descr {
+      color: var(--neutral-color-100);
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 42px;
+      text-align: left;
+
+      max-width: 674px;
+
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+
+    padding-bottom: 96px;
+  }
+
+  &__button {
+    position: relative;
+    color: rgb(126, 132, 146);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    transition: var(--transition);
+
+    @include tablet {
+      font-size: 14px;
+    }
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      height: 1px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background-color: var(--neutral-color-100);
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+
+    &:hover {
+        color: var(--neutral-color-100);
+      &::after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__card {
+    &-img {
+      max-width: 475px;
+      max-height: 400px;
+
+      padding-bottom: 16px;
+
+      @include mobile {
+        max-width: 350px;
+        max-height: 300px;
+      }
+
+      @include opt-mobile {
+        max-width: 270px;
+        max-height: 240px;
+      }
+    }
+
+    &-descr {
+      color: rgb(126, 132, 146);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 150%;
+      text-align: left;
+
+      padding-bottom: 24px;
+
+      @include mobile {
+        padding-bottom: 16px;
+      }
+    }
+
+    &-title {
+      color: var(--neutral-color-100);
+      width: 100%;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: -1px;
+      text-align: left;
+
+      padding-bottom: 16px;
+
+      max-width: 450px;
+
+      @include mobile {
+        font-size: 20px;
+
+        padding-bottom: 8px;
+      }
+    }
+
+    &-subtitle {
+      color: rgb(126, 132, 146);
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
+
+      max-width: 493px;
+
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__container {
+    max-width: 100%;
+
+    padding-left: 65px;
+
+    @include mobile {
+      padding-left: 32px;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
