@@ -1,0 +1,165 @@
+.slider {
+  position: relative;
+  padding: 96px 0;
+
+  &__container {
+    padding-left: 150px;
+
+    @include mini-desktop {
+      padding-left: 96px;
+    }
+
+    @include small-tablet {
+      padding-left: 15px;
+    }
+  }
+
+  &__top {
+
+    padding-bottom: 64px;
+
+    &-title {
+      color: var(--neutral-color-100);
+      font-size: 56px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: -2px;
+
+      padding-bottom: 24px;
+    }
+
+    &-descr {
+      max-width: 435px;
+
+      color: rgb(126, 132, 146);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 32px;
+    }
+  }
+
+  &__title {
+    padding: 16px 0;
+
+    color: var(--neutral-color-100);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: left;
+
+    max-width: 430px;
+
+
+  }
+
+  &__btn {
+    padding: 16px 45px;
+
+    box-sizing: border-box;
+    border: 1px solid rgb(206, 209, 216);
+    border-radius: 100px;
+
+    color: var(--neutral-color-100);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+
+    transition: var(--transition);
+
+    &:hover {
+      border: none;
+      background-color: var(--neutral-color-100);
+
+      color: var(--neutral-color-200);
+
+    }
+
+
+
+  }
+}
+
+.slider__descr {
+  color: rgb(126, 132, 146);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+
+  max-width: 403px;
+
+  padding-bottom: 24px;
+}
+
+.swiper-button-prev {
+  top: 15% !important;
+  left: 80% !important;
+  cursor: pointer;
+  border: 1px solid #ced1d8;
+  border-radius: 100px;
+  padding: 16px;
+  width: 50px;
+  height: 50px;
+  fill: #ced1d8;
+  transition: var(--transition);
+  margin: 0;
+
+  @include mini-desktop {
+    left: 89%
+  }
+
+  @include tablet {
+    left: 70% !important;
+  }
+
+  @include small-tablet {
+  }
+
+  @include small-tablet {
+    display: none;
+  }
+
+  @include opt-mobile {
+  }
+
+  @include small-mobile {
+  }
+
+  &:hover {
+    fill: var(--neutral-color-150);
+    background: #1d1e25;
+  }
+}
+
+.swiper-button-next {
+  top: 15%;
+  right: 10%;
+  cursor: pointer;
+  border: 1px solid #ced1d8;
+  border-radius: 100px;
+  padding: 16px;
+  width: 50px;
+  height: 50px;
+  fill: #ced1d8;
+  transition: var(--transition);
+  margin: 0;
+
+
+  @include small-tablet {
+    display: none;
+  }
+
+  &:hover {
+    fill: var(--neutral-color-150);
+    background: #1d1e25;
+  }
+}
+
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-button-prev::after {
+  content: '';
+}
+

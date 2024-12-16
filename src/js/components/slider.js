@@ -59,3 +59,39 @@ export const activeSlider = () => {
     },
   })
 }
+
+export const sliderSwipe = () => {
+  new Swiper('.slider__swiper', {
+    modules: [Navigation],
+    slidesPerView: 3,
+    spaceBetween: 32,
+    loop: true,
+    navigation: {
+      nextEl: '.slider__btn-next',
+      prevEl: '.slider__btn-prev',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 0,
+      },
+      320: {
+        slidesPerView: 1,
+      },
+      375: {
+        slidesPerView: 1,
+      },
+      450: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 2,
+      },
+      1470: {
+        slidesPerView: 3,
+      },
+    },
+  })
+}
